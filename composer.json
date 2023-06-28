@@ -1,0 +1,46 @@
+{
+    "name": "corpsoft/logging",
+    "description": "Global Slack logging in system",
+    "licence": "MIT",
+    "keywords": [
+        "corpsoft",
+        "laravel",
+        "logging",
+        "slack"
+    ],
+    "authors": [
+        {
+            "name": "Yurii Ivakhnov",
+            "email": "yura.ivahnov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/slack-notification-channel": "^2.0",
+        "ext-json": "*",
+        "illuminate/bus": "^9.18|^10.0",
+        "illuminate/conditionable": "^9.18|^10.0",
+        "illuminate/console": "^9.18|^10.0",
+        "illuminate/database": "^9.18|^10.0",
+        "illuminate/pipeline": "^9.18|^10.0",
+        "illuminate/support": "^9.18|^10.0",
+        "symfony/console": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Corpsoft\\Logging\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Corpsoft\\Logging\\LoggingServiceProvider"
+            ],
+            "config": {
+                "path": "config/"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
