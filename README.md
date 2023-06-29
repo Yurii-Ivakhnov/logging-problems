@@ -23,11 +23,7 @@ Corpsoft\Logging\LoggingServiceProvider::class,
 
 Publish config file
 ```php
-php artisan vendor:publish --tag=logging-problems
-```
-_If file not publish, run:_
-```php
-php artisan vendor:publish --tag=config
+php artisan vendor:publish --tag=logging
 ```
 
 ### Setting Slack webhook
@@ -39,7 +35,7 @@ Add in _.env_ file
 
 ---
 
-## Config File and .env variables
+## Config File and .env variables (FOR INFORMATION)
 
 Possible _.env_ variables
 ```php
@@ -59,8 +55,3 @@ Here is a description of the _config\logging-problems.php_
 
 'max_querying_time_tracking' // The maximum query threshold at which this will be logged (in milliseconds), the default is 1000
 ```
-
-
-
-
-# logging-problems

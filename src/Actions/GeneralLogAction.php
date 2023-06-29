@@ -39,7 +39,7 @@ class GeneralLogAction
     private function getFormatTraceAsString(array $trace): string
     {
         $getFilteredStack = new GetFilteredAndFormattedStack();
-        $callStack = $getFilteredStack($trace);
+        $callStack = $getFilteredStack($trace, line:false);
 
         return implode(" \n \n ", array_values($callStack));
     }

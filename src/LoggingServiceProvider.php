@@ -102,7 +102,7 @@ class LoggingServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../config/logging-problems.php' => config_path('logging-problems.php'),
-        ], 'config');
+        ], 'logging');
     }
 
     /**

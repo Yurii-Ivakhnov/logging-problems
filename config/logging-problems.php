@@ -4,10 +4,10 @@ return [
     /**
      * Global configs
      */
-    'log_slack_webhook_url' => env('LOG_SLACK_WEBHOOK_URL', false),
+    'log_slack_webhook_url' => env('LOG_CS_SLACK_WEBHOOK_URL', false),
     'enable_in_environment' => [
         'production',
-//        'local',
+//        'local','
 //        'staging',
     ],
 
